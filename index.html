@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Histología | Flash Cards aletita</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="glass-panel control-panel no-print">
+      <div class="control-grid">
+        <div class="brand">
+          <p class="eyebrow">Repaso de Histología</p>
+          <h1 class="title">Flash Cards aletita</h1>
+        </div>
+
+        <div class="controls">
+          <div class="control-card">
+            <div class="control-label-row">
+              <span class="control-label">Tamaño de las flash cards</span>
+              <span id="sizeValue" class="size-value">280 px</span>
+            </div>
+            <input id="cardSize" type="range" min="200" max="500" step="10" value="280" />
+          </div>
+
+          <div class="action-row">
+            <button id="printBtn" class="btn btn-primary" type="button">Imprimir Tarjetas</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="menuView" class="section-shell menu-view">
+      <div id="topicGrid" class="topic-grid" aria-label="Temas de histología"></div>
+    </section>
+
+    <section id="cardsView" class="section-shell cards-view" aria-live="polite">
+      <div class="glass-panel cards-head">
+        <div>
+          <p class="eyebrow">Flash Cards</p>
+          <h2 id="selectedTitle" class="section-title">Selecciona un tema</h2>
+          <p id="selectedMeta" class="section-copy">Selecciona un tema para comenzar.</p>
+        </div>
+        <span id="themePill" class="theme-pill">Listo para repasar</span>
+      </div>
+
+      <div id="cardsGrid" class="cards-grid"></div>
+      <div id="emptyState" class="glass-panel empty-state">
+        <h3>No hay tarjetas disponibles para este tema</h3>
+        <p>
+          Este botón no tiene tarjetas cargadas en este momento.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <button id="backBtn" class="back-fab no-print" type="button" aria-label="Volver al menú principal">
+    Volver al Menú Principal
+  </button>
+
+  <script src="./script.js"></script>
+</body>
+</html>
