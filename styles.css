@@ -11,7 +11,7 @@
       --lilac-strong: #6f3ed0;
       --yellow-pastel: #ffe680;
       /* EDITA SOLO ESTA LINEA PARA CAMBIAR EL FONDO: url("./img/foto.jpg") */
-      --background-image: url("foto.jpg");
+      --background-image: url("./foto.jpg");
       --shadow: 0 18px 42px rgba(123, 69, 148, 0.2);
     }
 
